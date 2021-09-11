@@ -1,0 +1,68 @@
+body {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+button {
+  border-radius: 1rem;
+}
+
+.container {
+  padding: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+}
+
+.row {
+  margin: 2rem 0;
+}
+
+.only__pc {
+  border-radius: 1.5rem;
+  color: white;
+  display: none;
+}
+
+.login_submit {
+  flex-direction: column;
+}
+
+.alt_login_btns button {
+  flex-basis: 49%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+  .only__pc {
+    display: block;
+  }
+  .only__mobile {
+    display: none;
+  }
+  .container {
+    padding: 5rem;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .login_submit {
+    flex-direction: row;
+  }
+  .login_submit button {
+    flex-basis: 30%;
+  }
+}
