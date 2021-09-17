@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+:root{
+    --green:#198754;
+    --grey:grey;
+}
+
+i{
+    font-size:20px;
+    padding:0 1rem;
+}
+
+
+.hero__image__container{
+    height:400px;
+}
+
+/* navbar section */
+
+.navbar-expand-lg{
+    justify-content:center !important;
+}
+
+.navbar-nav{
+    height:40px;
+    width: 60%;
+}
+
+.nav-item{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-link{
+    padding: 0.075rem !important;
+}
+
+.nav-item .active, .nav-link:hover{
+    color:white;
+    border-bottom:3px solid ;
+}
+
+.avatar__container{
+    width:200px;
+    height:200px;
+    border: 15px solid;
+    margin-top: -12%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* main section  */
+
+.main__text__container{
+    display:flex;
+    align-items: center;
+    height:220px;
+    justify-content:center;
+}
+
+/* card section  */
+.card{ 
+    border: none !important;
+}
+
+.card__date{
+flex-basis:10%;
+}
+
+.date{
+    width:140px;
+    height:140px;
+    border: 5px solid;
+    color:var(--grey);
+}
+
+.date span{
+    font-size:30px;
+    color:var(--green);
+    font-weight: bold;
+}
+
+.card__info i{
+    color:var(--green);
+}
+
+.card__info i span{
+color:var(--grey) ;
+}
+
+.card__footer p a{
+    color:var(--green);
+}
+
+@media (max-width: 600px) {
+
+    i{
+        font-size:12px;
+    }
+
+    .main__text{
+        font-size:16px !important;
+    }
+    .hero__image__container {
+        height: 250px;
+    }
+    .navbar-nav {
+        height: 24px;
+        width: 90%;
+    }
+    .main__text__container{
+        height:170px;
+    }
+    .avatar__container {
+        width: 130px;
+        height: 130px;
+    }
+    .nav-item {
+        font-size: 11px;
+    }
+    .card-body {
+        padding: 0rem 1rem !important;
+    }
+    .card-title{
+        font-size:20px !important;
+    }
+    .card-text,.card__footer p{
+        font-size:x-small;
+    }
+    .date {
+        width: 100px;
+        height: 100px;
+    }
+    .date span{
+        font-size:20px;
+    }
+}
